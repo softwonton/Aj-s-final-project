@@ -1,0 +1,142 @@
+/* Set the maximum width of the webpage to 1440px and center it horizontally */
+* {
+    max-width: 1440px;
+    margin: auto; 
+}
+
+/* Style the h1 element inside the header element */
+header h1{
+    /* Set the text color to white */
+    color: white;
+    /* Apply a linear gradient as the background */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    /* Add some padding to create space around the text */
+    padding: 20px;
+    /* Center the element horizontally */
+    margin: auto;
+    /* Set the font size to 35px */
+    font-size: 35px;
+}
+
+/* Style the h2 and h3 elements inside the main element */
+main h2, h3{
+    /* Center the text */
+    text-align: center;
+    /* Add some margin to create space around the text */
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Style the nav element */
+nav {
+    /* Remove the default margin */
+    margin: 0;
+}
+
+/* Style the ul element inside the nav element */
+nav ul {
+    /* Remove the default list style */
+    list-style-type: none;
+    /* Hide any overflow */
+    overflow: hidden;
+    /* Display the list as a flex container with a row direction */
+    display: flex;
+    flex-flow: row;
+    /* Remove the default margin and padding */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the li elements inside the nav element */
+nav li {
+    /* Add a transparent border-top */
+    border-top: 2px solid transparent;
+    /* Set the background color */
+    background: #2622AE;
+    /* Set the width to 33% */
+    width: 33%;
+    /* Center the text */
+    text-align: center;
+    /* Add some margin to create space around the element */
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 0; 
+    /* Add some border-radius to create a rounded corner effect */
+    border-radius: 8px;
+    /* Add some padding to create space around the content */
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+/* Navigation list items anchor tag styling */
+nav li a {
+    text-align: center; /* Centers the text */
+    padding-top: 14px; /* Adds padding to the top */
+    text-decoration: none; /* Removes the underline from the anchor tag */
+    color: white; /* Sets the text color to white */
+    font-size: 20px; /* Sets the font size to 20 pixels */
+    margin: 0px; /* Removes margin */
+}
+
+/* Art pieces container styling */
+.artPieces {
+    display: flex; /* Enables flexbox layout */
+    flex-flow: row; /* Sets the direction of the flexible items to be in a row */
+    flex-wrap: wrap; /* Allows the items to wrap to the next line if there's not enough space */
+}
+
+/* Image styling */
+img {
+    height: 400px; /* Sets the height of the image to 400 pixels */
+}
+
+/* Footer styling */
+footer{
+    background: rgb(2,0,36); /* Sets the background color to a dark blue */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); /* Adds a linear gradient to the background */
+    padding-top: 20px; /* Adds padding to the top */
+    padding-bottom: 20px; /* Adds padding to the bottom */
+    color: #fff; /* Sets the text color to white */
+    font-size: 15px; /* Sets the font size to 15 pixels */
+    text-align: center; /* Centers the text */
+    margin-left: 0px; /* Removes margin from the left */
+    width: 100%; /* Sets the width to 100% */
+    bottom: 0px; /* Positions the footer at the bottom of the page */
+}
+
+/* Media query for screens with a maximum width of 768 pixels */
+@media screen and (max-width: 768px){
+    /* Navigation unordered list styling */
+    nav ul {
+        list-style-type: none; /* Removes the bullets from the list items */
+        overflow: hidden; /* Hides any content that overflows the container */
+        display: flex; /* Enables flexbox layout */
+        flex-flow: column; /* Sets the direction of the flexible items to be in a column */
+        margin: 5px 5px 20px 10px; /* Adds margin around the list */
+        text-align: center; /* Centers the text within the list items */
+        padding: 0; /* Removes padding */
+        width: 100%; /* Sets the width to 100% */
+    }
+
+    /* Heading level 1 styling */
+    h1{
+        text-align: center; /* Centers the text */
+        font-size: 30px; /* Sets the font size to 30 pixels */
+    }
+
+    /* Navigation list items styling */
+    nav li{
+        font-size: 23px; /* Sets the font size to 23 pixels */
+        width: 98%; /* Sets the width to 98% */
+    }
+
+    /* Heading level 2 styling */
+    h2{
+        font-size: 25px; /* Sets the font size to 25 pixels */
+    }
+
+    /* Paragraph and list items styling */
+    p, li{
+        font-size: 20px; /* Sets the font size to 20 pixels */
+    }
+}
